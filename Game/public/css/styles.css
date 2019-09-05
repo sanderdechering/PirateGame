@@ -1,0 +1,109 @@
+/*----------------------------------------ALGEMEEN*/
+* {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: font;
+    white-space:nowrap;
+}
+
+background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/Neucha/Neucha.ttf);
+
+}
+
+
+
+/*----------------------------------------MENU*/
+H2{
+    color: #91826f;
+}
+scroll{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+boss {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    display: block;
+}
+hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    display: block;
+}
+bullet {
+    display: block;
+    position: fixed;
+}
+dialoog {
+    font-family: font;
+    src: url(../fonts/Neucha/Neucha.ttf);
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+    font-size: 1.5em;
+}
+rock{
+    display: block;
+    overflow: hidden;
+}
+.selected{
+    color: red;
+}
+boat{
+    display: block;
+}
+
+.slideAnimation{
+    display: block;
+    animation-name: boatSlideAnimation;
+    animation-duration: 4s;
+}
+pirateship{
+    animation: boatFloatAnimation 4s ease-in-out infinite alternate;
+    display: block
+}
+
+
+@keyframes boatFloatAnimation{
+    0% {
+      transform: translateY(70px);
+    }
+    
+    100% {
+      transform: translateY(90px);
+    }
+  }
+@keyframes boatSlideAnimation{
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+}
